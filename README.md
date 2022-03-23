@@ -7,7 +7,7 @@
 
 ## 安装
 ```sh
-$ composer require jiaxincui/hashid
+$ composer require yexiaofeng/hashid
 ```
 ## 配置
 1. 复制`config/hashid.php`文件到Laravel项目的`config`文件夹。
@@ -51,7 +51,7 @@ echo id_decode('nlK8GhRW'); //校验错误,抛出错误
 namespace App;
   
 use Illuminate\Database\Eloquent\Model;
-use Jiaxincui\Hashid\Traits\Hashid;
+use Yexiaofeng\Hashid\Traits\Hashid;
  
 class User extends Model
 {
@@ -74,7 +74,7 @@ public function getPidAttribute($value)
 通过Hashid提供的middleware对路由参数解码，在控制器中无需做任何操作即可解码加密后的路由参数。
 首先在`App\Http\Kernel.php`中注册中间件，在`Kernel`类的`$routeMiddleware`属性添加中间件条目。例如：
 ```php
-'hashid' => \Jiaxincui\Hashid\Http\Middleware\Hashid::class,
+'hashid' => \Yexiaofeng\Hashid\Http\Middleware\Hashid::class,
 ```
 现在你可以在路由中分配中间件了。例如：
 ```php
@@ -91,7 +91,3 @@ Route::get('users/{user}/posts/{post}/comments/{comment}', function ($user, $pos
 以上例子中间件只解密给出的参数，如以上例子会解密路由参数`user`和`post`,不会解密`commnent`
 
 现在你的应用已经具备完整的加密和解密模型ID的功能。
-
-## License
-
-[MIT](https://github.com/jiaxincui/hashid/blob/master/LICENSE.md) © [JiaxinCui](https://github.com/jiaxincui)
