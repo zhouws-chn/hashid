@@ -2,6 +2,7 @@
 一个对Laravel应用模型ID进行对称加密的辅助函数。
   
 依赖于[hashids/hashids](https://github.com/ivanakimov/hashids.php)
+基于[jiaxincui/hashid](https://github.com/jiaxincui/hashid)进行了修改,支持Laravel 9.
 
 只适用于正整数加密。
 
