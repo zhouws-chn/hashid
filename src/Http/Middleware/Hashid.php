@@ -1,6 +1,6 @@
 <?php
 
-namespace Jiaxincui\Hashid\Http\Middleware;
+namespace Yexiaofeng\Hashid\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Route;

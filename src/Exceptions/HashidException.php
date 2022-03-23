@@ -1,6 +1,6 @@
 <?php
 
-namespace Jiaxincui\Hashid\Exceptions;
+namespace Yexiaofeng\Hashid\Exceptions;
 
 use Exception;
 

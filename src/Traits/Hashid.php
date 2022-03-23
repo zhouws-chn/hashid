@@ -1,6 +1,6 @@
 <?php
 
-namespace Jiaxincui\Hashid\Traits;
+namespace Yexiaofeng\Hashid\Traits;
 
 
 trait Hashid

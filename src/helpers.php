@@ -1,5 +1,5 @@
 <?php
-use Jiaxincui\Hashid\Exceptions\HashidException;
+use Yexiaofeng\Hashid\Exceptions\HashidException;
 use Hashids\Hashids;
 
 if (! function_exists('id_encode')) {
